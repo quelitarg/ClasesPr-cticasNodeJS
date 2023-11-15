@@ -1,0 +1,19 @@
+a:active{
+background-color: aquamarine;
+}
+a:hover{
+    background-color: aqua;
+
+}
+
+div p:first-child{
+    color: blue;
+    background-color: rgb(124, 26, 148);
+}
+#medio{
+    color: rgb(181, 181, 16);
+}
+
+p::before{
+    content: "231A";
+}

@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    background-color: cadetblue;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    height: 110%;
+    width: auto;
+}
+
+
+.box-item{
+    background-color: crimson;
+    width: 150px;
+    height: 100%;
+    border: 2px solid black;
+}
