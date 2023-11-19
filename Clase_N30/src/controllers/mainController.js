@@ -8,7 +8,7 @@ module.exports = {
         },
     home: (req, res) => {
     return res.render('index', {
-        message:'Este texto es dinámico',
+        title: 'Inicio | CRUD MVC',
         list: [
             {
                 name: "Dell XPS 13",
