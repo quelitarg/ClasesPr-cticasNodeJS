@@ -1,0 +1,14 @@
+body {
+background-color: #2b2b2b;
+color: snow;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+}
+.card{
+    background-color: snow;
+    color: #2b2b2b;
+    padding: 2rem;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+</head>
+ <body>
+    <%- include('./partials/header') %>
+    <h1>Hola Mundo desde un Dinámico</h1>
+    <!---<ul>
+        <a href="/">Inicio</a>
+        <a href="/nosotros">Nosotros</a>
+    </ul>--->
+    <section>
+        <% list.forEach(el => { %>
+            <article class="card">
+            <h2><%= el.name %></h2>
+            <p><%= el.age %></p>
+            </article>
+        <% }); %>
+    </section>
+     <%- include('./partials/footer') %>
+ </body>
+</html>

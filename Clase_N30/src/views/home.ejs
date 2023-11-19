@@ -1,0 +1,17 @@
+<%- include('./partials/header') %>
+<main>
+    <section>
+        <h2>HOME del Sitio</h2>
+        <h2><%= message %></h2>
+        <p>Lorem ipsum dolor.</p>
+        <ul>
+            <% productos.forEach((item) => { %>
+             <li>
+                    <h2><%= item %></h2>
+             </li>
+            <% }) %>
+        </ul>
+            
+    </section>
+</main>
+<%- include('./partials/footer') %>
