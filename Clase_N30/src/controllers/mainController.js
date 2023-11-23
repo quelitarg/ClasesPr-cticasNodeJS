@@ -24,9 +24,10 @@ module.exports = {
             } 
         ]
     });
-    }
 }
-/*home: (req, res) => res.render('home', {
+}
+/*
+home: (req, res) => res.render('home', {
     productos: [
       "Dell XPS 13",
       "HP Spectre x360 13",
