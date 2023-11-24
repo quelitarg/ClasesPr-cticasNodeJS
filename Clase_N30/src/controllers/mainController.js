@@ -1,8 +1,8 @@
 module.exports = {
     //home: (req, res) => res.send("Página de Home - Sitio Principal"),
-    contact:(req, res) => res.send("Página de Contacto - Medio de contacto"),
+    //contact:(req, res) => res.send("Página de Contacto - Medio de contacto"),
     //about:(req, res) => res.send("Página Sobre Nosotros - Conocenos"),
-    about:(req, res) => {
+    /*about:(req, res) => {
         return res.render('nosotros', {
             message:'Este texto es dinámico'});
         },
@@ -24,7 +24,7 @@ module.exports = {
             } 
         ]
     });
-}
+}*/
 }
 /*
 home: (req, res) => res.render('home', {

@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const mainController = require('../controllers/mainController.js');
+//const mainController = require('../controllers/mainController.js');
+const path = require('path');
 
 /* MAIN ROUTES */
 
-router.get('/home', mainController.home);
-router.get('/contact', mainController.contact);
+//router.get('/home', mainController.home);
+//router.get('/contact', mainController.contact);
 //router.get('/about', mainController.about);
 
-router.get('/', (req, res)=> {
+router.get('/', (req, res) => {
     res.render('index', {
         title: 'Inicio | CRUD MVC',
         list: [
