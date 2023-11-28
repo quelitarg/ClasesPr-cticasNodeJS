@@ -2,8 +2,9 @@ const express = require('express');
 const multer = require('multer');
 const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
-const upload = multer({dest: 'uploads/'});
+
 const app = express();
+const upload = multer({dest: 'uploads/'});
 const port = 3000;
 
 // Configuración del motor de vistas
@@ -27,15 +28,20 @@ app.get('/', (req, res) => {
     res.send('Hola Mundo');
   });
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+  // Ruta para mostrar el formulario de carga de archivos
+app.get('/home', (req, res) => {
+    res.render('home');
+  });
+
+/*app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/upload', upload.fields([{name: 'image1'}, {name: 'image2'},{name: 'image3'}]), (req, res) =>  {
+app.post('/upload', upload.fields([{name: 'archivo'}, {name: 'archivo'},{name: 'archivo'}]), (req, res) =>  {
 
     console.log('Imágenes subidas con éxito');
     res.send('Archivos subidos con éxito');
-});
+});*/
 
 // Iniciar el servidor en el puerto 3000
 app.listen(3000, () => {
