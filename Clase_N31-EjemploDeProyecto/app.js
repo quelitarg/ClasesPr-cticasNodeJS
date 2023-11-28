@@ -24,17 +24,18 @@ dotenv.config({path: './env/.env'});
  app.set('cookieParser');
  
  //Ruta base para probar todo
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.send('Hola Mundo');
-  });
+  });*/
 
   // Ruta para mostrar el formulario de carga de archivos
 app.get('/home', (req, res) => {
     res.render('home');
   });
-//app.get('/', (req, res) => {
-//  res.sendFile(__dirname + '/index.html');
-//});
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
 
 // Ruta para manejar la carga de archivos
 // app.post('/upload', upload.single('archivo'), (req, res) => {
