@@ -21,6 +21,11 @@ dotenv.config({path: './env/.env'});
 
 //cookieParser.set
  app.set('cookieParser');
+ 
+ //Ruta base para probar todo
+app.get('/', (req, res) => {
+    res.send('Hola Mundo');
+  });
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
