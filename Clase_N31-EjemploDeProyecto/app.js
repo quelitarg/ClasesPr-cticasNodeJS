@@ -32,16 +32,44 @@ app.get('/', (req, res) => {
 app.get('/home', (req, res) => {
     res.render('home');
   });
+//app.get('/', (req, res) => {
+//  res.sendFile(__dirname + '/index.html');
+//});
 
-/*app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
-});
+// Ruta para manejar la carga de archivos
+// app.post('/upload', upload.single('archivo'), (req, res) => {
+//   if (!req.file) {
+//     res.send('Error: NO se seleccionó el archivo');
+//     console.log('No confirmos de archivo');
+//   } else {
+//     res.send('Archivo subido exitosamente');
+//   }
+// });
+
+
+// Ruta para manejar la carga de archivos
+// app.post('/upload', upload.single('archivo'), (req, res) => {
+//     if (!req.file) {
+//       res.send('Error:  se seleccionó ningún archivo');
+//     } else {
+//       // Acceder a los detalles del archivo subido
+//       const nombreArchivo = req.file.filename;
+//       const tamañoArchivo = req.file.size;
+  
+//       res.send(`Archivo subido exitosamente<br>
+//                 Nombre: ${nombreArchivo}<br>
+//                 consolo.log('mensaje')  <br>
+//                 Tamaño: ${tamañoArchivo} bytes`);
+//     }
+//   });
+  
+
 
 app.post('/upload', upload.fields([{name: 'archivo'}, {name: 'archivo'},{name: 'archivo'}]), (req, res) =>  {
 
     console.log('Imágenes subidas con éxito');
     res.send('Archivos subidos con éxito');
-});*/
+});
 
 // Iniciar el servidor en el puerto 3000
 app.listen(3000, () => {
